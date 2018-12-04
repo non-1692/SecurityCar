@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#9e8f94</color>
+
+
+    <color name="colorBlanco">#ffffff</color>
+    <color name="colorNegro">#000000</color>
+    <color name="colorGris">#5e5e5e</color>
+
+    <color name="colorStatusS">#388E3C</color>
+    <color name="colorStatusF">#8f0200</color>
+
+
+    <color name="Bgpoligono">#CC00cd00</color>
+    <color name="colorTextoTicket">#9E9E9E</color>
+    <color name="colorTextoTicket2">#BDBDBD</color>
+
+    <color name="AlertVerde">#3acb71</color>
+    <color name="AlertRojo">#ff0018</color>
+    <color name="AlertAzul">#1C6AC9</color>
+
+</resources>

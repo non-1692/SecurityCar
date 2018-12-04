@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".login.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+<!--        <ImageView
+            android:id="@+id/im_fondoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_login_bg"
+
+            />-->
+
+        <ImageView
+            android:id="@+id/im_logoLogin"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_logo"
+            android:visibility="visible"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/lytImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            >
+<!--
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:srcCompat="@drawable/ic_banner_por"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                />
+
+            &lt;!&ndash;android:layout_alignBottom="@+id/lytForm"
+            android:layout_marginBottom="95dp"&ndash;&gt;
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:srcCompat="@drawable/ic"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:srcCompat="@drawable/ic_soluciones"
+                android:scaleType="fitCenter"
+                android:visibility="vi"
+                />
+-->
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyStyleVerde">
+
+                <EditText
+                    android:id="@+id/inputUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="@string/txtUser"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="125"
+                    android:singleLine="true"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:typeface="sans"
+                    android:drawableTint="@color/colorPrimary"
+                    app:backgroundTint="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyStyleVerde">
+
+                <EditText
+                    android:id="@+id/inputPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="@string/txtPass"
+                    android:inputType="textPassword"
+                    android:maxLength="125"
+                    android:singleLine="true"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:typeface="sans"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:drawableTint="@color/colorPrimary"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_cuadrado"
+                android:text="@string/btn_login"
+                android:textColor="@color/colorBlanco"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

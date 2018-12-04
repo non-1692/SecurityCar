@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Security Car</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Security Car</string>
+    <string name="nav_header_subtitle">security@car.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="txtUser">Usuario</string>
+    <string name="txtPass">Contraseña</string>
+    <string name="btn_login">Login</string>
+
+    <string name="err_user">Ingrese el Usuario</string>
+    <string name="err_pass">Ingrese la Contraseña</string>
+    <string name="init_sesion">Iniciando Sesión</string>
+    <string name="unidades">Unidades</string>
+    <string name="tikets">Tikets</string>
+    <string name="config">Configuración</string>
+    <string name="salir">Salir</string>
+
+    <string name="exit_app">Desea salir de la app!</string>
+    <string name="cancel">Cancelar</string>
+    <string name="aceptar">Aceptar</string>
+
+    <string name="sin_status">Indeterminado</string>
+    <string name="motor_enc">Motor Apagado</string>
+    <string name="motor_apa">"Motor Encendido</string>
+    <string name="title_activity_seguimiento">Seguimiento</string>
+
+    <string name="key_maps">AIzaSyD9dIFBMJmD4EHi5UT70sIA2saW7qydmhk</string>
+    <string name="detalle_unidad">Detalle de Unidad</string>
+
+
+    <!--String demo Ticket-->
+    <string name="ticket_attributes">Ticket Attributes</string>
+    <string name="movie_title"><![CDATA[Fantastic Beast & Where to Find Them]]></string>
+    <string name="movie_duration">2h 13min</string>
+    <string name="movie_genre">Adventure, Fantasy, Action</string>
+    <string name="movie_ticket_number">400&#8211;2000&#8211;2020</string>
+    <string name="date">Date</string>
+    <string name="movie_date">01&#8211;03&#8211;2017</string>
+    <string name="time">Time</string>
+    <string name="movie_time">23:30</string>
+    <string name="seat">Seat</string>
+    <string name="movie_seat">C5-C8</string>
+    <string name="nom_tiket">Instalación</string>
+    <string name="des_tiket">Genera tu ticket para una nueva instalación</string>
+    <string name="pulsa">Pulsa aquí.</string>
+    <string name="select_tipo_unidad">Selecciona el tipo vehículo</string>
+    <string name="cometarios">Comentarios</string>
+    <string name="continuar">Continuar</string>
+    <string name="select_unidad">Seleciona la unidad</string>
+    <string name="otro">Escriba la peticion necesaria</string>
+    <string name="enviar">Enviar</string>
+
+    <string name="arrarTipo">auto</string>
+    <string name="err_comentario">Escribe los comentarios correspondientes.</string>
+
+    <string-array name="arrarTipoUnidad">
+        <item>Automovil</item>
+        <item>Transporte publico</item>
+        <item>Carro de carga</item>
+        <item>Caja Seca</item>
+        <item>Otro</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_scrollFlags="scroll|enterAlways"
+            style="@style/MyTablayout"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabLayout"
+            android:elevation="15dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvUnidades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="4dp"
+                android:scrollbars="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:visibility="visible"
+                />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:theme="@style/LinearProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="16dp"
+            android:visibility="visible" />
+
+
+        <RelativeLayout
+            android:id="@+id/lytAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="17dp"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/imvAlert"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_cloud_off_black_24dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tvAlert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/imvAlert"
+                android:text="Error no se a podido establecer la conexion con Tecnovatrack"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/tvAlertExtra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/tvAlert"
+                android:text="Toca para intentarlo nuevamente"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

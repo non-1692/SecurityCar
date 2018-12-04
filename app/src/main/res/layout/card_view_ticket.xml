@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal">
+
+
+    <!--TicketView-->
+        <com.vipulasri.ticketview.TicketView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ticketView"
+            app:ticketOrientation="horizontal"
+            app:ticketScallopRadius="10dp"
+            app:ticketScallopPositionPercent="50"
+            app:ticketShowBorder="false"
+            app:ticketBorderWidth="1dp"
+            app:ticketBorderColor="@color/colorAccent"
+            app:ticketShowDivider="true"
+            app:ticketDividerPadding="0dp"
+            app:ticketDividerType="dash"
+            app:ticketCornerType="rounded"
+            app:ticketElevation="8dp"
+            android:visibility="visible"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp"
+                app:srcCompat="@drawable/ic_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/movie_ticket_number"
+                android:textColor="@color/colorTextoTicket2"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"/>
+
+        </LinearLayout>
+
+<!--
+
+    &lt;!&ndash;Logo&ndash;&gt;
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp"
+                app:srcCompat="@drawable/ic_logo" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/movie_ticket_number"
+                android:textColor="@color/colorTextoTicket2"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"/>
+
+        </LinearLayout>
+-->
+
+<!--
+        &lt;!&ndash;Textos&ndash;&gt;
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="18dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvNomTick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/nom_tiket"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/des_tiket"
+                android:textColor="@color/colorTextoTicket"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pulsa"
+                android:textColor="@color/colorTextoTicket"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"/>
+
+
+
+        </LinearLayout>
+-->
+
+
+
+    </LinearLayout>
+
+    </RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/lytContenido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:id="@+id/imvStatus"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginRight="0dp"
+                                android:layout_marginLeft="0dp"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/lyt_circle"
+                                android:backgroundTint="@color/colorStatusS"
+                                android:orientation="horizontal"/>
+
+                            <TextView
+                                android:id="@+id/tvEco"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="5dp"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Eco 001"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvPlacas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Placas: DDF ADS A"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvFecha"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_insert_invitation_black_24dp"
+                            android:drawablePadding="8dp"
+                            android:drawableTint="@color/colorAccent"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="22 de Noviembre 2018"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tvHora"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                            android:drawablePadding="8dp"
+                            android:drawableTint="@color/colorAccent"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="15:02 Hrs."
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvDir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_map_black_24dp"
+                            android:drawablePadding="8dp"
+                            android:drawableTint="@color/colorAccent"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Av Margaritas 5412 Puebla, Pue."
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

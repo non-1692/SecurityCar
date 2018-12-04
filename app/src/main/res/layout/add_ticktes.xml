@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+
+            <!--lytAdd-->
+<!--            <include
+                android:id="@+id/lytAdd"
+                layout="@layout/intalacion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+
+
+            <LinearLayout
+                android:id="@+id/lytAddss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_tipo_unidad" />
+
+                        <Spinner
+                            android:id="@+id/spTipoVehiculo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@drawable/line"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:layerType="software" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/revision"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_unidad" />
+
+                        <Spinner
+                            android:id="@+id/spUnidad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@drawable/line"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:layerType="software" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/otro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/otro" />
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/inputComent"
+                        android:inputType="textMultiLine"
+                        android:hint="@string/cometarios"
+                        android:lines="8"
+                        android:minLines="6"
+                        android:gravity="top|left"
+                        android:maxLines="10"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:scrollbars="vertical"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="visible"
+                >
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cancel"
+                    />
+
+                <Button
+                    android:id="@+id/btnEnviar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/enviar"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
